@@ -1,0 +1,2 @@
+  $(".book_<%= @book.id %>").html("<%= escape_javascript(render partial: 'book_comments/comment-index', locals: {book: @book}) %>");
+  $("textarea").val('')
